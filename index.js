@@ -1,7 +1,7 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
   let obj = {}
-  let diff
+  let diff;
 
   for (let i = 0; i < array.length; i++) {
     diff = target - array[i]
@@ -21,12 +21,17 @@ function hasTargetSum(array, target) {
 
 /* 
   Add your pseudocode here
-  iterates over thenumbers and checks if the difference of target and the number is present in the array..
-  if so it returns true and if not it returns false.
+  declare an empty object.
+declare diff variable.
+use for loop to iterate through the numbers.
+if the difference between the target and any of the numbers is present in the array return true. Otherwise return false.
+
 */
 
 /*
   Add written explanation of your solution here
+  iterates over thenumbers and checks if the difference of target and the number is present in the array..
+  if so it returns true and if not it returns false.
 */
 
 // You can run `node index.js` to view these console logs
