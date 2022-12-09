@@ -1,5 +1,18 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  let obj = {}
+  let diff
+
+  for (let i = 0; i < array.length; i++) {
+    diff = target - array[i]
+
+    if (obj[diff]) {
+      return true
+    } else {
+      obj[array[i]] = true
+    }
+  }
+  return false
 }
 
 /* 
@@ -8,6 +21,8 @@ function hasTargetSum(array, target) {
 
 /* 
   Add your pseudocode here
+  iterates over thenumbers and checks if the difference of target and the number is present in the array..
+  if so it returns true and if not it returns false.
 */
 
 /*
